@@ -1,0 +1,17 @@
+def is_even_or_odd(number):
+    if number == 0:
+        return "Zero"
+    elif number % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+def main():
+    try:
+        user_input = int(input("Enter a number: "))
+        result = is_even_or_odd(user_input)
+        print(f"The number {user_input} is {result}.")
+    except ValueError:
+        print("Please enter a valid integer.")
+main()
+
